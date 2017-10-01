@@ -1,0 +1,36 @@
+<% include partials/header %>
+
+    
+    <h3>User Profile </h3>
+    <p>Welcome <%= currentUser.usertype %> - <%= currentUser.name %></p>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+          var lat= <%= currentUserLoc.lat %>;
+          
+          var lng =<%= currentUserLoc.lng %>;
+          
+          var center = {lat: lat, lng: lng };
+        
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: center,
+          scrollwheel:false
+        });
+     
+    
+        var marker = new google.maps.Marker({
+          position: center,
+          map: map
+        });
+        
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrQqgcpZwWz9Ps_zbRFo-TxeZn0RQ43fI&callback=initMap">
+    </script>
+
+<h3 style="text-align:center"><%= currentUserLoc.location %></h3>
+
+
+<% include partials/footer %>

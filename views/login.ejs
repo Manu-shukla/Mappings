@@ -1,0 +1,35 @@
+<% include partials/header %>
+
+<div class="container" >
+    <div class="row">
+<div style="width:40%; margin:25px auto">
+<form action="/login" method="POST" >
+      <fieldset>
+        <legend><h1>Login form</h1></legend>
+        <div class="form-group">
+      <label for='email'>Email Address*</label>
+      <input class="form-control" type="email" ng-model="username" name="username" placeholder="joe@xyz.com" required /> <br />
+     <span ng-bind="username"></span>
+     </div>
+     
+      <div class="form-group">
+      <label for='password'>Password*</label>
+      <input class="form-control" type="password" ng-model="password" name="password" pattern="[a-zA-Z0-9@$]{8,}" placeholder="Enter your password" title="Password should be of minimum 8 characters" required/> <br />
+      </div>
+      <div class="form-group">
+      <button class="btn btn-lg btn-primary">Sign In</button>
+      </div>
+      </fieldset>
+</form>
+<a href="/register">New User?Register here</a>
+<a href="/forgot" >Forgot Password</a>
+<br>
+<br>All * fileds are mandatory
+</div>
+</div>
+
+</div>
+
+
+
+<% include partials/footer %>

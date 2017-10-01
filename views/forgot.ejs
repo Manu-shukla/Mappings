@@ -1,0 +1,23 @@
+<% include partials/header %>
+<div class="container">
+    <div class="row">
+	<div class="col-md-12">
+	    <div style="width:40%; margin:25px auto">
+		<form action="/forgot" method="POST">
+			<fieldset>
+			    <legend>Forgot Password</legend>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" name="email" ng-model="email" placeholder="Enter your email address" autofocus class="form-control">
+			</div>
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary" value="Reset Password">
+			</div>
+		</form>
+	     </div>
+    </div>
+    </div>
+</div>
+	       </fieldset>
+			
+<% include partials/footer %> 

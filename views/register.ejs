@@ -1,0 +1,56 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="row">
+    
+<div style="width:40%; margin:25px auto">
+<form action="/register" method="POST" >
+    <fieldset>
+        <legend><h1>Registration form</h1></legend>
+      <div class="form-group">
+          <label for='name'>Name*</label> 
+          <input class="form-control" type="text" ng-model="name" name="name" placeholder="Enter your name" required/> <br />
+     <span ng-bind="name"></span> 
+      </div>
+     <div class="form-group">
+        <label for='email'>Email Address*</label>
+        <input class="form-control" type="email" ng-model="username" name="username" placeholder="joe@xyz.com" required /> </br>
+     <span ng-bind="username"></span> 
+     </div>
+      <div class="form-group">
+      <label for='password'>Password*</label>
+      <input class="form-control" type="password" ng-model="password" name="password" pattern="[a-zA-Z0-9@$]{8,}" placeholder="Create password" title="Password should be of minimum 8 characters" required/> <br />
+      </div>
+      <div class="form-group">
+      <label for='usertypel'>Enter your usertype*</label>
+      <input class="form-control" type="text" ng-model="usertype" name="usertype" placeholder="Admin/Employee/Vendor">  <br />
+      </div>
+      <div class="form-group">
+      <label for='location'>Location*</label>
+      <input class="form-control" type="text" ng-model="location" name="location" placeholder="California,US" required/> <br />
+      <span ng-bind="location"></span>
+      </div>
+      
+      <div class="form-group"><label for='image'>Profile image</label>
+      <input class="form-control" type="file" ng-model="image" name="image" accept=" .jpg, .png, .jpeg|image" /> </br>
+      <span ng-bind="image"></span>
+      </div>
+      <div class="form-group">
+      <label for='pincode'>Pincode</label>
+      <input class="form-control" type="text" ng-model="pincode" name="pincode" pattern="[0-9]{6}" placeholder="Enter your pincode" title="Pincode should be in numbers"/> </br>
+     <span ng-bind="pincode"></span>
+     
+     </div>
+     <div class="form-group"><button class="btn btn-lg btn-primary" >Sign Up</button>
+      </div>
+      </fieldset>
+</form>
+<a href="/login">Already registered?Login here</a>
+</div>
+
+</div>
+</div>
+<br/>
+<br/>
+All * fileds are mandatory
+<% include partials/footer %>

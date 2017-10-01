@@ -1,0 +1,82 @@
+#map {
+        width: 50%;
+        height: 400px;
+        background-color: grey;
+        margin: 0 auto;
+        
+      }
+    /*  .pro*/
+    /*  {*/
+    /*width: 200px;*/
+    /*background-color: lightgrey;*/
+    /*border: 5px solid lightblue;*/
+    /*padding-left: 10px;*/
+    /*  }*/
+      
+body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #181818;
+      padding-top: 50px;
+     
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #2693b5;
+      color: #fff;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  #main
+  {
+      padding-top: 100px;
+  }
+  
+  .logo {
+      color: #000;
+      font-size: 200px;
+  }
+#flas{
+        padding-top: 30px;
+        width:50%;
+}
+  
+  .navbar {
+      margin-bottom: 10px;
+      background-color: #2693b5;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #2693b5 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  
+ /*#f4511e*/
